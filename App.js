@@ -1,18 +1,13 @@
-// const root = ReactDOM.createRoot(document.getElementById("root"));
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// const parent = React.createElement("div", { id: "parent" }, [
-//   React.createElement("div", { id: "child" }, [
-//     React.createElement("h1", { id: "heading", abc: "xyz" }, "This is h1 tag"),
-//     React.createElement("h2", { id: "heading", abc: "xyz" }, "This is h2 tag"),
-//   ]),
-//   React.createElement("div", { id: "child2" }, [
-//     React.createElement("h1", { id: "heading", abc: "xyz" }, "This is h1 tag"),
-//     React.createElement("h2", { id: "heading", abc: "xyz" }, "This is h2 tag"),
-//   ]),
-// ]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// console.log("parent", parent);
+const parent = React.createElement("div", { id: "parent" }, [
+  React.createElement("div", { id: "child" }, [
+    React.createElement("h1", { id: "hello", abc: "xyz" }, "This is h3 tag"),
+    React.createElement("h2", { id: "heading", abc: "xyz" }, "This is h6 tag"),
+  ]),
+]);
 
-// setTimeout(() => {
-//   root.render(parent);
-// }, 5000);
+root.render(parent);
